@@ -73,6 +73,12 @@ body {
     display: grid;
     gap: calc(var(--spacing-medium) * 2);
     grid-template-columns: repeat(3, 1fr);
+
+    /*this code is to have it fit on your mobile phone, it will reduce the amount of card but wont reduce the size below 250px)*/
+    /* grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); */
+
+     /*this code is to have it fit on your mobile phone, if its smaller than 250 it will make it fit but if there is more space it will expand to 1fr*/
+    /* grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); */
     margin-bottom: var(--spacing-large);
 }
 
