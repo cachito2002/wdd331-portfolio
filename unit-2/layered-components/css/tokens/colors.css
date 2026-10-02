@@ -1,0 +1,22 @@
+/* Color tokens: define all color values for the site.
+   Name by purpose (--color-primary, --color-surface)
+   not appearance (--blue, --light-gray). */
+:root {
+    /* TODO: Define color tokens here */
+    --text-color: #F3D3BD;
+    --primary-color: #5E0B15;
+    --background-color: #011936;
+    --accent-color: #E1BB80;
+
+    /* Font and Spacing */
+    --small-spacing: 12px;
+    --medium-spacing: 24px;
+    --large-spacing: 36px;
+    --extra-large-spacing: 46px;
+    --font-family: Helvetica, Apple, sans-serif;
+    --border-radius: 10px;
+
+
+
+
+}
