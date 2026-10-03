@@ -3,3 +3,10 @@
    by layer order without needing !important. */
 
 /* TODO: Add any utility classes you find useful */
+.text-center {
+   text-align: center;
+}
+
+.margin-top {
+   margin-top: var(--medium-spacing);
+}

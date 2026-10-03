@@ -20,7 +20,9 @@
       cursor: pointer;
 
       &:hover {
-         background-color: var(--text-color);
+         background-color: var(--verification);
+         font-weight: 600;
+         color: var(--text-color);
       }
 
    }

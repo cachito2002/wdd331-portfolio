@@ -9,19 +9,10 @@
     --accent-color: #b3cbfef9;
     --classic-link-color: white;
     --normal-color: black;
+    --verification: rgb(82, 135, 82);
 
     /* Font and Spacing */
-    --small-spacing: 12px;
-    --medium-spacing: 24px;
-    --large-spacing: 36px;
-    --extra-large-spacing: 46px;
-    --font-family: Helvetica, Apple, sans-serif;
-    --border-radius: 10px;
-
-    --font-size-small: 14px;
-    --font-size-small_medium: 24px;
-    --font-size-medium: 34px;
-    --font-size-large: 46px;
+   
 
 
 
