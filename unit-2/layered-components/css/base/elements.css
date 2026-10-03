@@ -3,3 +3,48 @@
    Reference tokens with var(). */
 
 /* TODO: Style body, headings, links, and other base elements */
+body {
+   background-color: var(--background-color);
+   font-family: var(--font-family);
+   color: var(--text-color);
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   font-size: var(--font-size-large);
+   padding-bottom: var(--small-spacing);
+
+}
+h2 {
+   font-size: var(--font-size-medium);
+   padding-bottom: var(--small-spacing);
+
+}
+
+li {
+   font-weight: 700;
+   padding: var(--small-spacing);
+}
+
+a {
+   text-decoration: none;
+   color: var(--classic-link-color);
+
+   &:hover {
+      color: var(--accent-color);
+   }
+
+   &:focus-visible{
+      outline: 1px solid var(--accent-color);
+      background-color: var(--primary-color);
+   }
+}
+
+header {
+   text-align: center;
+}
+
+footer {
+   text-align: center;
+}
