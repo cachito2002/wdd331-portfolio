@@ -2,3 +2,29 @@
    Use native nesting. Add :focus-visible styles to all inputs. */
 
 /* TODO: Style the form components */
+
+.note-form {
+   display: grid;
+   gap: var(--small-spacing);
+
+   .form-field {
+      display: grid;
+      gap: var(--small-spacing);
+
+      :is(input, textarea, select) {
+      background-color: var(--classic-link-color);
+      padding: var(--medium-spacing);
+      border-radius: var(--border-radius);
+      font-family: var(--font-family);
+
+      &:focus-visible {
+         outline: 4px solid var(--text-color);
+      }
+      }
+      label {
+         margin-top: var(--medium-spacing);
+         font-size: var(--font-size-small_medium);
+         font-weight: 600;
+      }
+   }   
+}

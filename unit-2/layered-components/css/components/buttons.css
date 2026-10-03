@@ -2,3 +2,33 @@
    Use native nesting for pseudo-classes and modifiers. */
 
 /* TODO: Style the button components */
+.btn {
+   padding: var(--medium-spacing);
+   border-radius: var(--border-radius);
+   font-family: var(--font-family);
+   font-size: var(--font-size-small_medium);
+   font-weight: 400;
+
+   &.primary {
+      background-color: var(--accent-color);
+   }
+
+   &.secondary {
+      background-color: var(--primary-color);
+   }
+   &:not(:disabled) {
+      cursor: pointer;
+
+      &:hover {
+         background-color: var(--text-color);
+      }
+
+   }
+   &:disabled {
+      opacity: 0.5;
+   }
+
+   &:focus-visible{
+      outline: 4px solid var(--text-color);
+      }
+}

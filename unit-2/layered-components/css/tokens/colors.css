@@ -4,9 +4,11 @@
 :root {
     /* TODO: Define color tokens here */
     --text-color: #F3D3BD;
-    --primary-color: #5E0B15;
-    --background-color: #011936;
-    --accent-color: #E1BB80;
+    --primary-color: #dc2f43;
+    --background-color: #22436b;
+    --accent-color: #b3cbfef9;
+    --classic-link-color: white;
+    --normal-color: black;
 
     /* Font and Spacing */
     --small-spacing: 12px;
@@ -15,6 +17,12 @@
     --extra-large-spacing: 46px;
     --font-family: Helvetica, Apple, sans-serif;
     --border-radius: 10px;
+
+    --font-size-small: 14px;
+    --font-size-small_medium: 24px;
+    --font-size-medium: 34px;
+    --font-size-large: 46px;
+
 
 
 
