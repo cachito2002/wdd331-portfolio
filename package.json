@@ -1,0 +1,25 @@
+{
+  "name": "wdd331-portfolio",
+  "version": "1.0.0",
+  "description": "**Student:** Fernando Ferraez-Rincon **Semester:** Junior 2026 **Live Site:** [View Site](https://cachito2002.github.io/wdd331-portfolio/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lightningcss --bundle --minify css/main.css -o dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cachito2002/wdd331-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cachito2002/wdd331-portfolio/issues"
+  },
+  "homepage": "https://github.com/cachito2002/wdd331-portfolio#readme",
+  "devDependencies": {
+    "lightningcss-cli": "^1.33.0"
+  }
+}
