@@ -1,0 +1,63 @@
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    max-width: 64rem;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: clamp(
+        var(--small-spacing),
+        3vw,
+        var(--large-spacing));
+}
+
+main > section {
+    margin-bottom: var(--large-spacing);
+}
+
+.portfolio-section {
+    display: grid;
+    margin-top: clamp(
+            var(--small-spacing),
+            8vw,
+            calc(2 * var(--large-spacing))
+            );
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: var(--medium-spacing);
+}
+
+.page-header {
+    background-color: var(--text-color);
+    a {
+        color: var(--normal-color);
+        font-size: var(--font-size-small_medium);
+        font-weight: 200;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+        
+    }
+}
+
+:is(.page-header, .page-footer ){
+    width: 100%;
+    padding: var(--large-spacing);
+    text-align: center;
+}
+
+.page-footer {
+    background-color: var(--text-color);
+    margin: 0;
+
+    p {
+        font-size: var(--font-size-small_medium);
+        color: var(--normal-color);
+        font-weight: 300;
+        
+    }
+}

@@ -9,11 +9,15 @@ body {
 h1 {
    font-size: var(--font-size-large);
    padding-bottom: var(--small-spacing);
+   text-align: center;
+   margin-top: calc(2 * var(--large-spacing));
+
 
 }
 h2 {
    font-size: var(--font-size-medium);
    padding-bottom: var(--small-spacing);
+   text-align: center;
 
 }
 
