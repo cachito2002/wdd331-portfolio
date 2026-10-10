@@ -1,36 +1,13 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@layer tokens, base, layout, components, utilities;
 
-:root {
-    --color-bg: #f4f6f8;
-    --color-bg-backup: #24244a;
-    --color-text: #1e293b;
-    --color-text-backup: white;
-    --color-primary: #006eb6;
-    --color-primary-hover: #004f7f;
-    --space-sm: 0.5rem;
-    --space-md: 1rem;
-    --space-lg: 2rem;
-    --font-body: system-ui, -apple-system, sans-serif;
-}
+@import "./tokens/colors.css" layer(tokens);
+@import "./tokens/variables.css" layer(tokens);
 
-body {
-    font-family: var(--font-body);
-    color: var(--color-text-backup);
-    background-color: var(--color-bg-backup);
-    line-height: 1.6;
-    padding: var(--space-lg);
-}
+@import "./base/reset.css" layer(base);
+@import "./base/elements.css" layer(base);
 
-a {
-    color: var(--color-primary);
-}
+@import "./layout/layout.css" layer(layout);
 
-a:hover {
-    color: var(--color-primary-hover);
-}
+@import "./components/components.css" layer(components);
+
+@import "./utilities/utilities.css" layer(utilities);

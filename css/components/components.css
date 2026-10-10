@@ -1,0 +1,30 @@
+ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding-top: var(--small-spacing);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text-color);
+    padding: var(--medium-spacing);
+    color: var(--normal-color);
+    border-radius: var(--border-radius);
+
+    h2 {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    a {
+        margin-top: auto;
+        color: var(--normal-color);
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+}
