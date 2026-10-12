@@ -46,7 +46,7 @@ main > section {
 
 :is(.page-header, .page-footer ){
     width: 100%;
-    padding: var(--large-spacing);
+    padding: var(--small-spacing);
     text-align: center;
 }
 
