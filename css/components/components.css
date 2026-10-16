@@ -7,7 +7,7 @@ ul {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: var(--text-color);
+    background-color: var(--color-surface);
     padding: var(--medium-spacing);
     color: var(--normal-color);
     border-radius: var(--border-radius);

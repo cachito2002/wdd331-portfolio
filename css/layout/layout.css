@@ -31,7 +31,10 @@ main > section {
 }
 
 .page-header {
-    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-surface);
     a {
         color: var(--normal-color);
         font-size: var(--font-size-small_medium);
@@ -51,7 +54,7 @@ main > section {
 }
 
 .page-footer {
-    background-color: var(--text-color);
+    background-color: var(--color-surface);
     margin: 0;
 
     p {
