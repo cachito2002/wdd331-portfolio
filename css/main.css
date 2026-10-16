@@ -10,4 +10,6 @@
 
 @import "./components/components.css" layer(components);
 
+@import url('components/theme-toggle.css') layer(components);
+
 @import "./utilities/utilities.css" layer(utilities);

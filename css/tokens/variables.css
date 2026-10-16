@@ -1,13 +1,60 @@
 :root {
-    --small-spacing: 12px;
-    --medium-spacing: 24px;
-    --large-spacing: 36px;
-    --extra-large-spacing: 46px;
-    --font-family: Helvetica, Apple, sans-serif;
-    --border-radius: 10px;
+    /* SPACING */
+    --spacing-sm: 12px;
+    --spacing-md: 24px;
+    --spacing-lg: 36px;
+    --spacing-xl: 46px;
 
-    --font-size-small: 14px;
-    --font-size-small_medium: 24px;
-    --font-size-medium: 34px;
-    --font-size-large: 46px;
+     /* FONT SIZE */
+    --font-size-sm: 14px;
+    --font-size-sm-md: 24px;
+    --font-size-md: 34px;
+    --font-size-lg: 46px;
+
+     /* RADIUS */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-default: 10px;
+
+    /* FAMILY-FONT */
+    --font-family-sans: Helvetica, Ariel, sans-serif;
+    --font-family-mono: monospace;
+
+     /* TRANSITIONS */
+    --transition-base: 0.2s ease;
+
+    /* ICONS */
+    --icon-size-sm: 24px;
+    --icon-size-md: 32px;
+
+    /* FOCUS */
+    --outline-width: 2px;
+    --outline-offset: 3px;
+
+
+    /* LEGACY SPACE TOKENS */
+    --small-spacing: var(--spacing-sm);
+    --medium-spacing: var(--spacing-md);
+    --large-spacing: var(--spacing-lg);
+    --extra-large-spacing: var(--spacing-xl);
+
+
+     /* LEGACY FONT SIZE */
+    --font-size-small: var(--font-size-sm);
+    --font-size-small_medium: var(--font-size-sm-md);
+    --font-size-medium: var(--font-size-md);
+    --font-size-large: var(--font-size-lg);
+   
+    /* LEGACY FAMILY-FONT TOKENS */
+    --font-family: var(--font-family-sans);
+
+   
+    /* LEGACY RADIUSTOKENS */
+    --border-radius: var(--radius-default);
+
+
+
+   
+    
 }
