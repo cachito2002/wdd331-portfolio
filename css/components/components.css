@@ -1,29 +1,29 @@
 ul {
-   display: flex;
-   justify-content: center;
-   list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-surface);
-    padding: var(--medium-spacing);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  padding: var(--medium-spacing);
+  color: var(--normal-color);
+  border-radius: var(--border-radius);
+  min-height: 300px;
+
+  h2 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  a {
+    margin-top: auto;
     color: var(--normal-color);
-    border-radius: var(--border-radius);
 
-    h2 {
-        text-align: center;
-        font-weight: 500;
+    &:hover {
+      color: var(--primary-color);
     }
-
-    a {
-        margin-top: auto;
-        color: var(--normal-color);
-
-        &:hover {
-            color: var(--primary-color);
-        }
-    }
-
+  }
 }
