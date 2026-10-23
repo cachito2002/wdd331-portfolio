@@ -1,10 +1,10 @@
 /*HERO CUSTOMIZATION */
-body {
+.visual-effects-page body {
   background-color: var(--color-bg);
   color: var(--color-text);
 }
 
-.hero {
+.visual-effects-page .hero {
   position: relative;
   height: 500px;
   overflow: hidden;
@@ -16,7 +16,7 @@ body {
   }
 }
 
-.hero::before {
+.visual-effects-page .hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -24,7 +24,7 @@ body {
   z-index: 1;
 }
 
-.hero-content {
+.visual-effects-page .hero-content {
   position: absolute;
   bottom: 30px;
   left: 30px;
@@ -36,10 +36,10 @@ body {
 }
 
 /*CARD AREA */
-.card-section {
+.visual-effects-page .card-section {
   margin-top: 50px;
 }
-.card {
+.visual-effects-page .card {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
@@ -49,7 +49,7 @@ body {
   }
 }
 
-.card::before {
+.visual-effects-page .card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -57,7 +57,7 @@ body {
   z-index: 1;
 }
 
-.card-body {
+.visual-effects-page .card-body {
   position: absolute;
   bottom: 60px;
   left: 50px;
@@ -73,7 +73,7 @@ body {
   }
 }
 
-.card:nth-child(2) {
+.visual-effects-page .card:nth-child(2) {
   background: linear-gradient(
     to bottom,
     rgb(227, 227, 156),
@@ -81,12 +81,12 @@ body {
   );
 }
 
-.card:nth-child(3) .card-image {
+.visual-effects-page .card:nth-child(3) .card-image {
   filter: grayscale(0%);
   transition: filter 0.15s ease;
 }
 
-.card:nth-child(3):hover .card-image {
+.visual-effects-page .card:nth-child(3):hover .card-image {
   filter: grayscale(100%);
 }
 
