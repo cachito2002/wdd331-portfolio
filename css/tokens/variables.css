@@ -1,60 +1,65 @@
 :root {
-    /* SPACING */
-    --spacing-sm: 12px;
-    --spacing-md: 24px;
-    --spacing-lg: 36px;
-    --spacing-xl: 46px;
+  /* SPACING */
+  --spacing-sm: 12px;
+  --spacing-md: 24px;
+  --spacing-lg: 36px;
+  --spacing-xl: 46px;
 
-     /* FONT SIZE */
-    --font-size-sm: 14px;
-    --font-size-sm-md: 24px;
-    --font-size-md: 34px;
-    --font-size-lg: 46px;
+  /* FONT SIZE */
+  --font-size-sm: 14px;
+  --font-size-sm-md: 24px;
+  --font-size-md: 34px;
+  --font-size-lg: 46px;
 
-     /* RADIUS */
-    --radius-sm: 4px;
-    --radius-md: 6px;
-    --radius-lg: 8px;
-    --radius-default: 10px;
+  /* RADIUS */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-default: 10px;
 
-    /* FAMILY-FONT */
-    --font-family-sans: Helvetica, Ariel, sans-serif;
-    --font-family-mono: monospace;
+  /* FAMILY-FONT */
+  --font-family-sans: Helvetica, Ariel, sans-serif;
+  --font-family-mono: monospace;
 
-     /* TRANSITIONS */
-    --transition-base: 0.2s ease;
+  /* TRANSITIONS */
+  --transition-base: 0.2s ease;
 
-    /* ICONS */
-    --icon-size-sm: 24px;
-    --icon-size-md: 32px;
+  /* ICONS */
+  --icon-size-sm: 24px;
+  --icon-size-md: 32px;
+  --icon-size-lg: 54px;
 
-    /* FOCUS */
-    --outline-width: 2px;
-    --outline-offset: 3px;
+  /* FOCUS */
+  --outline-width: 2px;
+  --outline-offset: 3px;
 
+  /*SHADOWS*/
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 12px 15px rgba(0, 0, 0, 0.17), 0 15px 20px rgba(0, 0, 0, 0.2);
 
-    /* LEGACY SPACE TOKENS */
-    --small-spacing: var(--spacing-sm);
-    --medium-spacing: var(--spacing-md);
-    --large-spacing: var(--spacing-lg);
-    --extra-large-spacing: var(--spacing-xl);
+  --shadow-card-sm: var(--shadow-sm);
+  --shadow-card-md: var(--shadow-md);
+  --shadow-card-lg: var(--shadow-lg);
+  --shadow-text-sm: 1px 2px 2px rgba(0, 0, 0, 0.05);
+  --shadow-text-md: 3px 6px 8px rgba(0, 0, 0, 0.15);
+  --shadow-text-lg: 8px 10px 12px rgba(0, 0, 0, 0.2);
 
+  /* LEGACY SPACE TOKENS */
+  --small-spacing: var(--spacing-sm);
+  --medium-spacing: var(--spacing-md);
+  --large-spacing: var(--spacing-lg);
+  --extra-large-spacing: var(--spacing-xl);
 
-     /* LEGACY FONT SIZE */
-    --font-size-small: var(--font-size-sm);
-    --font-size-small_medium: var(--font-size-sm-md);
-    --font-size-medium: var(--font-size-md);
-    --font-size-large: var(--font-size-lg);
-   
-    /* LEGACY FAMILY-FONT TOKENS */
-    --font-family: var(--font-family-sans);
+  /* LEGACY FONT SIZE */
+  --font-size-small: var(--font-size-sm);
+  --font-size-small_medium: var(--font-size-sm-md);
+  --font-size-medium: var(--font-size-md);
+  --font-size-large: var(--font-size-lg);
 
-   
-    /* LEGACY RADIUSTOKENS */
-    --border-radius: var(--radius-default);
+  /* LEGACY FAMILY-FONT TOKENS */
+  --font-family: var(--font-family-sans);
 
-
-
-   
-    
+  /* LEGACY RADIUSTOKENS */
+  --border-radius: var(--radius-default);
 }
