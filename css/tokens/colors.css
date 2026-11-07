@@ -1,6 +1,12 @@
 :root {
   color-scheme: light;
 
+  /*Library Theme*/
+  --library-background: #ede8d0;
+  --library-text: black;
+  --library-sections: #722f37;
+  --library-background-backup: #d2b48c;
+
   --text-color: var(--color-text);
   --primary-color: var(--color-accent);
   --background-color: var(--color-bg);
