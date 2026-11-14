@@ -1,16 +1,44 @@
 /* Non-color tokens: spacing, typography, borders, shadows.
    These values should be referenced by every other layer. */
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-    /* TODO: Define spacing, font, radius, and shadow tokens here */
-     --small-spacing: 12px;
-    --medium-spacing: 24px;
-    --large-spacing: 36px;
-    --extra-large-spacing: 46px;
-    --font-family: Helvetica, Apple, sans-serif;
-    --border-radius: 10px;
+  /* TODO: Define spacing, font, radius, and shadow tokens here */
+  --small-spacing: 12px;
+  --medium-spacing: 24px;
+  --large-spacing: 36px;
+  --extra-large-spacing: 46px;
+  --font-family: Helvetica, Apple, sans-serif;
+  --border-radius: 10px;
 
-    --font-size-small: 14px;
-    --font-size-small_medium: 24px;
-    --font-size-medium: 34px;
-    --font-size-large: 46px;
+  --font-size-small: 14px;
+  --font-size-small_medium: 24px;
+  --font-size-medium: 34px;
+  --font-size-large: 46px;
+
+  /* Font families */
+  --font-family-sans: Helvetica, Arial, sans-serif;
+  --font-family-mono: monospace;
+  --font-family-heading: "Koh Santepheap", Georgia, serif;
+  --font-family-body: "Montserrat", var(--font-family-sans);
+
+  /* Typography scale - Ratio 1.25 */
+  --font-size-xs: 10.24px;
+  --font-size-sm: 12.8px;
+  --font-size-md: 16px;
+  --font-size-lg: clamp(18px, 16.158px + 0.614vw, 25px);
+  --font-size-xl: clamp(22.5px, 20.19737px + 0.76754vw, 31.25px);
+  --font-size-2xl: clamp(28.125px, 25.24737px + 0.95921vw, 39.06px);
+  --font-size-3xl: clamp(35.16px, 31.56263px + 1.19912vw, 48.83px);
+
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 2;
+
+  /* Semantic typography */
+  --font-size-caption: var(--font-size-sm);
+  --font-size-body: var(--font-size-md);
+  --font-size-heading-sm: var(--font-size-lg);
+  --font-size-heading-lg: var(--font-size-2xl);
+  --font-size-display: var(--font-size-3xl);
 }
