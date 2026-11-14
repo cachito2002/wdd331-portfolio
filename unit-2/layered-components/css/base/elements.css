@@ -2,49 +2,59 @@
    No classes here, only bare HTML element selectors.
    Reference tokens with var(). */
 
-/* TODO: Style body, headings, links, and other base elements */
 body {
-   background-color: var(--background-color);
-   font-family: var(--font-family);
-   color: var(--text-color);
-   margin: 0;
-   padding: 0;
+  background-color: var(--background-color);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-normal);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-   font-size: var(--font-size-large);
-   padding-bottom: var(--small-spacing);
-
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-display);
+  line-height: var(--line-height-tight);
+  padding-bottom: var(--small-spacing);
 }
-h2 {
-   font-size: var(--font-size-medium);
-   padding-bottom: var(--small-spacing);
 
+h2 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-heading-lg);
+  line-height: var(--line-height-tight);
+  padding-bottom: var(--small-spacing);
+}
+
+h3 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-heading-sm);
+  line-height: var(--line-height-tight);
 }
 
 li {
-   font-weight: 700;
-   padding: var(--small-spacing);
+  font-weight: 700;
+  padding: var(--small-spacing);
 }
 
 a {
-   text-decoration: none;
-   color: var(--classic-link-color);
+  text-decoration: none;
+  color: var(--classic-link-color);
 
-   &:hover {
-      color: var(--accent-color);
-   }
+  &:hover {
+    color: var(--accent-color);
+  }
 
-   &:focus-visible{
-      outline: 1px solid var(--accent-color);
-      background-color: var(--primary-color);
-   }
+  &:focus-visible {
+    outline: 1px solid var(--accent-color);
+    background-color: var(--primary-color);
+  }
 }
 
 header {
-   text-align: center;
+  text-align: center;
 }
 
 footer {
-   text-align: center;
+  text-align: center;
 }

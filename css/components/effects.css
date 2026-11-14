@@ -65,11 +65,11 @@
   color: white;
 
   h3 {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-heading-sm);
     text-shadow: var(--shadow-text-lg);
   }
   p {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-caption);
   }
 }
 

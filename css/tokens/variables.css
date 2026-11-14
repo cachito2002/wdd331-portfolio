@@ -6,10 +6,25 @@
   --spacing-xl: 46px;
 
   /* FONT SIZE */
-  --font-size-sm: 14px;
-  --font-size-sm-md: 24px;
-  --font-size-md: 34px;
-  --font-size-lg: 46px;
+  --font-size-xs: 10.24px;
+  --font-size-sm: 12.8px;
+  --font-size-md: 16px;
+  --font-size-lg: clamp(18px, 16.158px + 0.614vw, 25px);
+  --font-size-xl: clamp(22.5px, 20.19737px + 0.76754vw, 31.25px);
+  --font-size-2xl: clamp(28.125px, 25.24737px + 0.95921vw, 39.06px);
+  --font-size-3xl: clamp(35.16px, 31.56263px + 1.19912vw, 48.83px);
+
+  /* SEMANTIC TYPOGRAPHY */
+  --font-size-caption: var(--font-size-sm);
+  --font-size-body: var(--font-size-md);
+  --font-size-heading-sm: var(--font-size-lg);
+  --font-size-heading-lg: var(--font-size-2xl);
+  --font-size-display: var(--font-size-3xl);
+
+  /* LINE HEIGHT */
+  --line-height-tight: 1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 2;
 
   /* RADIUS */
   --radius-sm: 4px;
@@ -18,8 +33,10 @@
   --radius-default: 10px;
 
   /* FAMILY-FONT */
-  --font-family-sans: Helvetica, Ariel, sans-serif;
+  --font-family-sans: Helvetica, Arial, sans-serif;
   --font-family-mono: monospace;
+  --font-family-heading: "Koh Santepheap", Arial, sans-serif;
+  --font-family-body: "Montserrat", var(--font-family-sans);
 
   /* TRANSITIONS */
   --transition-base: 0.2s ease;
@@ -52,8 +69,8 @@
   --extra-large-spacing: var(--spacing-xl);
 
   /* LEGACY FONT SIZE */
-  --font-size-small: var(--font-size-sm);
-  --font-size-small_medium: var(--font-size-sm-md);
+  --font-size-small: var(--font-size-xs);
+  --font-size-sm-md: var(--font-size-sm);
   --font-size-medium: var(--font-size-md);
   --font-size-large: var(--font-size-lg);
 
