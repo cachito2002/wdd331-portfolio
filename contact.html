@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <script src="js/theme-preference.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="contact-page">
+    <header class="contact-header">
+      <h2>Contact Form</h2>
+      <h3>Enter the following information for contacting</h3>
+    </header>
+    <form class="contact-form">
+      <label for="first-name"> First Name </label>
+      <input id="first-name" type="text" name="f-name" required />
+
+      <label for="last-name"> Last Name </label>
+      <input id="last-name" type="text" name="l-name" required />
+
+      <label for="email"> Email </label>
+      <input id="email" type="email" name="email" required />
+
+      <label for="phone-number"> Phone Number </label>
+      <input id="phone-number" type="tel" name="phone-number" minlength="10" />
+
+      <label for="contact-reason"> Reason for contact </label>
+      <textarea name="contact-reason" id="contact-reason" required></textarea>
+
+      <label class="contact-consent" for="checkbox">
+        <input type="checkbox" id="checkbox" name="checkbox" />
+        I agree for this person to contact me back
+      </label>
+
+      <button type="submit">Submit Contact Info</button>
+    </form>
+  </body>
+</html>

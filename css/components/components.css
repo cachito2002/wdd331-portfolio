@@ -27,3 +27,131 @@ ul {
     }
   }
 }
+
+.complete-resume {
+  display: grid;
+  font-family: var(--font-family-body);
+  grid-template-columns: 1fr;
+  margin-top: var(--spacing-lg);
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  max-width: calc(var(--spacing-xl) * 15);
+  align-self: center;
+
+  h1,
+  h2,
+  h3 {
+    text-align: left;
+  }
+}
+
+.personal-info,
+.resume {
+  display: grid;
+  align-content: start;
+  gap: var(--spacing-md);
+
+  h3 {
+    margin-bottom: var(--spacing-md);
+  }
+  article {
+    border: 1px solid white;
+    padding: var(--spacing-md);
+  }
+}
+
+/*Contact Form CSS*/
+.contact-page {
+  font-family: var(--font-family-body);
+  margin-top: var(--spacing-xl);
+}
+.contact-form {
+  display: grid;
+  font-family: var(--font-family-body);
+  grid-template-columns: 1fr;
+  margin-top: var(--spacing-lg);
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  max-width: calc(var(--spacing-xl) * 15);
+  align-self: center;
+  border: 1px solid white;
+
+  label {
+    margin-top: var(--spacing-lg);
+  }
+}
+.contact-form button {
+  justify-self: center;
+  padding: calc(var(--spacing-sm) * 0.5) var(--spacing-sm);
+  font: inherit;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-md);
+}
+
+.contact-form > label {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.contact-form > .contact-consent {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-form input[type="checkbox"] {
+  accent-color: var(--accent-color);
+}
+
+.contact-form input {
+  padding: var(--spacing-sm);
+}
+
+.contact-form textarea {
+  field-sizing: fixed;
+  font-family: var(--font-family-body);
+  min-height: var(--spacing-xl);
+  padding: var(--spacing-sm);
+}
+
+.contact-form :focus-visible {
+  font-family: var(--font-family-body);
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+@media print {
+  .resume-page {
+    display: block;
+    background: white;
+    color: black;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-sm);
+    orphans: 2;
+    widows: 2;
+  }
+
+  .resume-page nav,
+  .resume-page button,
+  .resume-page .theme-toggle {
+    display: none;
+  }
+
+  .resume-page .complete-resume,
+  .resume-page .personal-info,
+  .resume-page .resume {
+    display: block;
+  }
+
+  .resume-page .experience {
+    break-inside: avoid;
+  }
+  .resume-page .complete-resume {
+    font-family: inherit;
+  }
+
+  .resume-page a[href]::after {
+    content: " (" attr(href) ")";
+  }
+}
