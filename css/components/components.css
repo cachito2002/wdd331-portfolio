@@ -60,7 +60,7 @@ ul {
   }
 }
 
-/*Contact Form CSS*/
+/* Contact Form CSS*/
 .contact-page {
   font-family: var(--font-family-body);
   margin-top: var(--spacing-xl);
@@ -93,6 +93,21 @@ ul {
   gap: var(--spacing-sm);
 }
 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  caret-color: var(--accent-color);
+}
+
+.contact-form select {
+  appearance: none;
+  background-image: url("../../unit-5/images/blue-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-md) center;
+  background-size: 1rem;
+  padding-inline-end: calc(var(--spacing-sm) * 3);
+}
+
 .contact-form > .contact-consent {
   display: flex;
   align-items: center;
@@ -106,6 +121,16 @@ ul {
 
 .contact-form input {
   padding: var(--spacing-sm);
+}
+
+.contact-form input[type="range"]:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.contact-form input[type="range"]:focus-visible::-moz-range-thumb {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 .contact-form textarea {
